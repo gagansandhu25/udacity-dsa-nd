@@ -1,0 +1,8 @@
+The implementation of this problem is pretty straight forward. If we have a sorted array in decending order then we can simply make the first number biggest by selecting even indexes and the other number by selecting odd indexes.
+
+As we were not allowed to use python's sort function, I decided to use Merge Sort to achieve O(log(n)) for the sorting.
+
+Then we just have to iterate through the list once which is O(n)
+
+Time complexity: Sorting[O(log(n))] and Iteration O(n) = O(log(n))
+Space complexity: O(n)  

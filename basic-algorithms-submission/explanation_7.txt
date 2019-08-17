@@ -1,0 +1,5 @@
+In both and insert and search operation, we have to traverse through the path array once. Then we use inside a dictionary inside every node to store children which we have to search the section of the path in the dict which is a O(1) operation.
+
+For Both Insert and Search operations:
+Time complexity: O(n) where n is the path array after splitting the route
+Space complexity: O(n) where n is the total number of elements in trie

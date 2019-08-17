@@ -1,0 +1,4 @@
+As the array is sorted and we basically have to search an item in it. this can also be solved in log(n) by using binary search.
+
+Time complexity: O(log(n))
+Space complexity: O(1)

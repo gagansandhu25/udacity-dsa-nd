@@ -1,0 +1,4 @@
+A brute force approach to this problem traverse from 1 upto N where N is the number whose sqrt we have to find. There is a better approach to this by doing binary search.
+
+Time complexity: O(log(n))
+Space complexity: O(1)
