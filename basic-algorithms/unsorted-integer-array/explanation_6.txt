@@ -1,0 +1,4 @@
+My implemention of this problem here runs in a single traversal in linear time. The approach is to set temp value to any value from the array(I used first one in my case). Then while interating through the list we can compare the number with temp variables and update them accordingly.
+
+Time complexity: O(n)
+Space complexity: O(1)

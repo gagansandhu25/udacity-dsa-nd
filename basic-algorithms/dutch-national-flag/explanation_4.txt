@@ -1,0 +1,4 @@
+For the implementation for dutch national flag, we choose a middle element and depending on the value of selected element, we decide if we have to move to left side or right side. But in this case, we have to iterate through complete array.
+
+Time complexity: O(n)
+Space complexity: O(1)
