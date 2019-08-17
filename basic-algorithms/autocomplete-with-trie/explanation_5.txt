@@ -1,4 +1,4 @@
-For the implementation for dutch national flag, we choose a middle element and depending on the value of selected element, we decide if we have to move to left side or right side. But in this case, we have to iterate through complete array.
+Insert and search operations are pretty fast as we have to traverse on only the word length. While, searching for a prefix, we have to find all the suggessions for it by going through all its children.
 
-Time complexity: O(n)
-Space complexity: O(1)
+Time complexity: O(nk) where n is the word length and k is number of children in each node
+Space complexity: O(nk)
