@@ -54,10 +54,7 @@ def test_function(test_case):
     else:
         print("Fail")
 
-test_function([[1, 2, 3, 4, 5], [542, 31]])
-test_case = [[4, 6, 2, 5, 9, 8], [964, 852]]
-test_function(test_case)
-test_case = [[6, 4, 3, 2, 7, 9, 9, 0, 1, 2], [97421, 96320]]
-test_function(test_case)
-test_case = [[], [1, 2]]
-test_function(test_case)
+test_function([[1, 2, 3, 4, 5], [542, 31]]) #Pass
+test_function([[4, 6, 2, 5, 9, 8], [964, 852]]) #Pass
+test_function([[6, 4, 3, 2, 7, 9, 9, 0, 1, 2], [97421, 96320]]) #Pass
+test_function([[], [1, 2]]) #Fail

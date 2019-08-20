@@ -1,6 +1,6 @@
 import math
 
-def sqrt(number):
+def sqrt(number = 0):
     if number < 1:
         return False
     
@@ -20,6 +20,9 @@ def sqrt(number):
               
     return ans
 
-print(sqrt(3)) # return 1
-print(sqrt(0)) # return False
-print(sqrt(626)) # return 25
+print ("Pass" if  (3 == sqrt(9)) else "Fail") # Pass
+print ("Pass" if  (0 == sqrt(0)) else "Fail") # Pass
+print ("Pass" if  (4 == sqrt(16)) else "Fail") # Pass
+print ("Pass" if  (1 == sqrt(1)) else "Fail") # Pass
+print ("Pass" if  (6 == sqrt(27)) else "Fail") # Fail
+print ("Pass" if  (0 == sqrt(0)) else "Fail") # Fail

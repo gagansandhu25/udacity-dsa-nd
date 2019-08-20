@@ -50,8 +50,8 @@ class Trie:
         self.words = []
         self.suffixes(node, temp_word)
 
-        for s in self.words: 
-            print(s) 
+        #for s in self.words: 
+            #print(s) 
             
         return True
 
@@ -75,12 +75,11 @@ for word in wordList:
     MyTrie.insert(word)
 
 
-from ipywidgets import widgets
-from IPython.display import display
-from ipywidgets import interact
-def f(prefix):
-    if prefix != '':
-        prefixNode = MyTrie.find(prefix)
-    else:
-        print('')
-interact(f,prefix='');
+MyTrie.find("ant")
+print(MyTrie.words)  # ['ant', 'anthology', 'antagonist', 'antonym']
+MyTrie.find("func")
+print(MyTrie.words)  # ['function']
+MyTrie.find("trip")
+print(MyTrie.words)  # ['tripod']
+MyTrie.find("tr")
+print(MyTrie.words)  # ['trie', 'trigger', 'trigonometry', 'tripod']

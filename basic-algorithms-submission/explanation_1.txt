@@ -1,4 +1,9 @@
-A brute force approach to this problem traverse from 1 upto N where N is the number whose sqrt we have to find. There is a better approach to this by doing binary search.
+To find the square root of any integer, what basically we have to do it start iterating from 1 up to the number we have to find the square root of. This simplest approach belongs to a linear category.
 
-Time complexity: O(log(n))
-Space complexity: O(1)
+Now, if we try to think about improving this, the first idea I had in mind was that we are iterating through a list of numbers which are sorted (starting from 1 and adding up 1 every time).  So I thought about using a binary search approach somehow to reduce the number of steps my algorithm performs and still get the correct result.
+
+**Reasoning behind this method:**
+What we do in this is, we pick a mid-value and square it, if the square of mid comes out to be greater than N, we know that the mid is too big, so we take the first part of numbers and start the same process again. Similarly, the other case. This way we reach the number close to square root in log(n) steps as we are dividing the list of numbers on every iteration.
+
+Time complexity: O(log(n)) because of the binary search approach
+Space complexity: O(1) because it doesn't store any new data anywhere

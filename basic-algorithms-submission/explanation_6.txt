@@ -1,4 +1,8 @@
-My implemention of this problem here runs in a single traversal in linear time. The approach is to set temp value to any value from the array(I used first one in my case). Then while interating through the list we can compare the number with temp variables and update them accordingly.
+In this problem we are asked to find min and max in the array in the unsorted array. As the list in unsorted, there is no way to find the max and min in less that linear time. 
 
-Time complexity: O(n)
-Space complexity: O(1)
+One approach is to solve the problem by sorting the array and then picking first and last element as mind and max. But all the sorting algorithms that we know about takes more then linear time. 
+
+The other approach, that I tried to use is by setting a min and max variables to any value and then comparies them by every number in the list, one at a time in linear fashion.
+
+Time complexity: O(n) because the list is unsorted and we have to interate through the complete list
+Space complexity: O(1) because we don't have to use any temporary collections to store any data
